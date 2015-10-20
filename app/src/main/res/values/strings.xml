@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Financas</string>
+
+    <string name="lancamento">Lançamento</string>
+    <string name="resumo">Resumo</string>
+    <string name="cliente">Cliente</string>
+    <string name="configuracao">Configuração</string>
+
+    <string name="btnDesc">Descricao</string>
+    <string name="pesquisar">pesquisar</string>
+    <string name="incluir">Incluir</string>
+    <string name="alterar">Alterar</string>
+    <string name="excluir">Excluir</string>
+    <string name="menu">Menu</string>
+    <string name="sair">Sair</string>
+
+</resources>

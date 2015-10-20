@@ -1,0 +1,42 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/men_incluir"
+        android:showAsAction="always"
+        android:icon="@android:drawable/ic_menu_add"
+        android:title="@string/incluir"/>
+
+    <item
+        android:id="@+id/men_pesquisar"
+        android:showAsAction="always"
+        android:icon="@android:drawable/ic_menu_search"
+        android:title="@string/pesquisar"/>
+    
+    <item
+        android:id="@+id/men_alterar"
+        android:orderInCategory="200"
+        android:showAsAction="never"
+        android:icon="@android:drawable/ic_menu_edit"
+        android:title="@string/alterar"/>
+
+    <item
+        android:id="@+id/men_excluir"
+        android:orderInCategory="300"
+        android:showAsAction="never"
+        android:icon="@android:drawable/ic_menu_delete"
+        android:title="@string/excluir"/>
+
+    <item
+        android:id="@+id/men_menu"
+        android:orderInCategory="400"
+        android:showAsAction="never"
+        android:icon="@android:drawable/ic_menu_gallery"
+        android:title="@string/menu"/>
+
+    <item
+        android:id="@+id/men_sair"
+        android:orderInCategory="500"
+        android:showAsAction="never"
+        android:icon="@android:drawable/ic_menu_close_clear_cancel"
+        android:title="@string/sair"/>
+</menu>
