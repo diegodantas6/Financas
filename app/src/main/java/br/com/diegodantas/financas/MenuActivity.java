@@ -1,5 +1,7 @@
 package br.com.diegodantas.financas;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -85,7 +87,8 @@ public class MenuActivity extends AppCompatActivity {
 
     private void onConfiguracao() {
 
-        Toast.makeText(MenuActivity.this, "onConfiguracao", Toast.LENGTH_SHORT).show();
+        startActivity(new Intent(this, ConfiguracaoActivity.class));
+        finish();
 
     }
 
@@ -95,4 +98,25 @@ public class MenuActivity extends AppCompatActivity {
         finish();
 
     }
+
+    @Override
+    public void onBackPressed() {
+        AlertDialog.Builder dialog = new AlertDialog.Builder(this);
+//        dialog.setIcon(R.drawable.ic_launcher);
+        dialog.setTitle(R.string.app_name);
+        dialog.setMessage("Tem certeza que deseja sair?");
+
+        dialog.setPositiveButton("Sim", new	DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface di, int arg) {
+                finish();
+            }
+        });
+        dialog.setNegativeButton("Não", new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface di, int arg) {
+                di.dismiss();
+            }
+        });
+        dialog.show();
+    }
+
 }

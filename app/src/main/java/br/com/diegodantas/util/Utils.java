@@ -9,6 +9,10 @@ import android.net.ConnectivityManager;
 import android.util.Log;
 import android.widget.Toast;
 
+import java.text.DecimalFormat;
+import java.text.DecimalFormatSymbols;
+import java.util.Locale;
+
 import br.com.diegodantas.financas.R;
 
 public class Utils {
@@ -84,5 +88,16 @@ public class Utils {
 			str = str.replace("\\", "");
 		}
 		return str;
+	}
+
+	public static String formatStringToFloat(String valor) {
+
+		String pattern = "#,##0.00";
+		Locale locale = new Locale("pt", "BR");
+		DecimalFormatSymbols decimalFormatSymbols = new DecimalFormatSymbols(locale);
+		DecimalFormat decimalFormat = new DecimalFormat(pattern, decimalFormatSymbols);
+
+		return decimalFormat.format(Double.valueOf(valor));
+
 	}
 }

@@ -6,6 +6,10 @@
     <string name="cliente">Cliente</string>
     <string name="configuracao">Configuração</string>
 
+    <string name="precoKg">Preço/KG (R$)</string>
+    <string name="taxaCredito">Taxa de Crédito (%)</string>
+    <string name="taxaDebito">Taxa de Débito (%)</string>
+
     <string name="btnDesc">Descricao</string>
     <string name="pesquisar">pesquisar</string>
     <string name="incluir">Incluir</string>
