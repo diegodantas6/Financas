@@ -75,7 +75,8 @@ public class MenuActivity extends AppCompatActivity {
 
     private void onLancamento() {
 
-        Toast.makeText(MenuActivity.this, "onLancamento", Toast.LENGTH_SHORT).show();
+        startActivity(new Intent(this, CalendarActivity.class));
+        finish();
         
     }
 

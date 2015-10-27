@@ -27,6 +27,28 @@ public class TabelasDao extends AbstractDao {
 				");";
 		sql.add(tabela);
 
+//		tabela = "drop table lancamento;";
+//		sql.add(tabela);
+
+		tabela = "create table if not exists lancamento" +
+				"(" +
+				"id     integer not null primary key autoincrement," +
+				"dia    integer not null," +
+				"mes    integer not null," +
+				"ano    integer not null," +
+				"quantidade_cliente      real," +
+				"quantidade_kg    		 real," +
+				"preco_kg    			 real," +
+				"receita_outros_produtos real," +
+				"gasto_kg    			 real," +
+				"gasto_outros_produtos   real," +
+				"gasto_operacional       real," +
+				"valor_dinheiro          real," +
+				"valor_credito           real," +
+				"valor_debito    		 real" +
+				");";
+		sql.add(tabela);
+
 		super.execSql(sql);
 	}
 

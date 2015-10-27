@@ -100,4 +100,9 @@ public class Utils {
 		return decimalFormat.format(Double.valueOf(valor));
 
 	}
+
+	public static String parceZero(int value, int length) {
+		return String.format("%0" + length + "d", value);
+	}
+
 }
