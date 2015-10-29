@@ -20,11 +20,16 @@
     <string name="receita">Receita</string>
     <string name="gasto">Gasto</string>
     <string name="geral">Geral</string>
+    <string name="total">Total</string>
+    <string name="dinheiro">Dinheiro</string>
+    <string name="credito">Crédito</string>
+    <string name="debito">Débito</string>
+    <string name="dia">Dia</string>
 
     <string name="quantidadeCliente">Quantidade/Cliente</string>
     <string name="quantidadeKg">Quantidade/Kg</string>
     <string name="outrosProdutos">Outros Produtos</string>
-    <string name="gastoKg">Custo/KG</string>
+    <string name="gastoKg">Gasto/KG</string>
     <string name="gastoOperacional">Operacional</string>
     <string name="valorDinheiro">Dinheiro</string>
     <string name="valorCredito">Crédito</string>
