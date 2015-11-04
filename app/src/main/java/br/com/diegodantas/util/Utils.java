@@ -6,6 +6,7 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.ConnectivityManager;
+import android.text.Editable;
 import android.util.Log;
 import android.widget.Toast;
 
@@ -92,7 +93,7 @@ public class Utils {
 
 	public static String formatStringToFloat(String valor) {
 
-		String pattern = "#,##0.00";
+		String pattern = "#.##0.00";
 		Locale locale = new Locale("pt", "BR");
 		DecimalFormatSymbols decimalFormatSymbols = new DecimalFormatSymbols(locale);
 		DecimalFormat decimalFormat = new DecimalFormat(pattern, decimalFormatSymbols);
@@ -105,4 +106,23 @@ public class Utils {
 		return String.format("%0" + length + "d", value);
 	}
 
+	public static Float editableToFloat(Editable text) {
+
+//		String valorAux = formatStringToFloat(text.toString());
+
+		if (text.toString().isEmpty())
+			return 0f;
+		else
+			return Float.valueOf(text.toString());
+
+	}
+
+	public static String floatToString(Float value) {
+
+		if (value == null)
+			return "";
+		else
+			return String.valueOf(value);
+
+	}
 }

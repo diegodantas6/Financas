@@ -51,6 +51,8 @@ public class Lancamento implements ObjectModel {
 		if (cursor.getCount() == 0)
 			return obj;
 
+		cursor.moveToFirst();
+
 		obj.setId(cursor.getLong(cursor.getColumnIndex("id")));
 		obj.setDia(cursor.getInt(cursor.getColumnIndex("dia")));
 		obj.setMes(cursor.getInt(cursor.getColumnIndex("mes")));
